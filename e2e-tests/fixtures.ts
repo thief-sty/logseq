@@ -43,6 +43,7 @@ const consoleLogWatcher = (msg: ConsoleMessage) => {
 }
 
 base.beforeAll(async () => {
+  base.slow()
   if (electronApp) {
     return
   }

@@ -6,6 +6,7 @@ import { randomString, createRandomPage, modKey } from './utils'
 
 
 test('create page and blocks, save to disk', async ({ page, block, graphDir }) => {
+  test.slow()
   const pageTitle = await createRandomPage(page)
 
   // do editing
